@@ -1,0 +1,76 @@
+/* Style the rounded button */
+.rounded-button {
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: none;
+    height: 100px;
+    border-radius: 20%;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .login-page {
+    background-color: white; /* Dark background color */
+    margin: 0;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    gap: 100px;
+  }
+  
+  .connect-button {
+    background-color: #ff6f61; /* Button color that suits the background */
+    color: #fff; /* White text color */
+    margin-left: 10px;
+    border: none;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for Disabled Button */
+  .connect-button[disabled] {
+    background-color: darkgrey !important; /* Override background color for disabled button */
+    cursor: not-allowed;
+    color: gray;
+  }
+  .connect-button[disabled]:hover {
+    color: gray !important;
+  }
+  
+  .connect-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    color: white !important;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .login-page {
+      flex-direction: column;
+      padding: 10px;
+      gap: 20px;
+    }
+    .login-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .connect-button {
+      margin: 0;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  

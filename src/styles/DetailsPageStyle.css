@@ -1,0 +1,12 @@
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center; /* Horizontal centering */
+    /* height: 100vh; Adjust the height as needed */
+    margin-top: 20px;
+  }
+  
+  .centered-heading {
+    text-align: center;
+  }
